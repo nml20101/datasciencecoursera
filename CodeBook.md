@@ -22,20 +22,20 @@ Out of 561 variables, we selected
 
 * Subjects information is contained in subject_train.txt and subject__test.txt files. Subjects are labeled 1 to 30 (integers).
 * Variables in the tidy data sets are:
- * activity
-  * subject
-  * tBodyAcc-mean()-X
-  * tBodyAcc-mean()-Y
-  * tBodyAcc-mean()-Z
-  * tBodyAcc-std()-X"
-  * tBodyAcc-std()-Y"
-  * tBodyAcc-std()-Z"
-  * tGravityAcc-mean()-X"
-  * tGravityAcc-mean()-Y"
-  * tGravityAcc-mean()-Z"
-  * tGravityAcc-std()-X"
-  * tGravityAcc-std()-Y"
-  * tGravityAcc-std()-Z"
+  * 1 activity
+  * 2 subject
+  * 3 tBodyAcc-mean()-X
+  * 4 tBodyAcc-mean()-Y
+  * 5 tBodyAcc-mean()-Z
+  * 6 tBodyAcc-std()-X
+  * 7 tBodyAcc-std()-Y
+  * 8 tBodyAcc-std()-Z
+  * 9 tGravityAcc-mean()-X
+  * 10 tGravityAcc-mean()-Y
+  * 11 tGravityAcc-mean()-Z
+  * 12 tGravityAcc-std()-X
+  * 13 tGravityAcc-std()-Y
+  * 14 tGravityAcc-std()-Z
   * tBodyAccJerk-mean()-X"
   * tBodyAccJerk-mean()-Y"
   * tBodyAccJerk-mean()-Z"
@@ -120,16 +120,16 @@ Unzip the zipped file using unzip function
  * ytest = UCI HAR Dataset/test/y_test.txt
  * ytrain = UCI HAR Dataset/train/y_train.txt
 * Subset features that contain mean or std
-Use grep to select indices in features$V2 (second column) that have mean and std
+* Use grep to select indices in features$V2 (second column) that have mean and std
 * Knowing the indices, subset Xtrain and Xtest, and features 
-Covert subsetted features to charactertidyData1.txt
-Add 2 columns to Xtrain and Xtest: subject (from subjectxxx.txt) and activity (from y(xxx))
+* Covert subsetted features to character values
+* Add 2 columns to Xtrain and Xtest: subject (from subjectxxx.txt) and activity (from y(xxx))
 * Create labels for new columns by creating a new vector feaSubNew
 * Add new labels using colnames function
 * Merge data using rbind
 * Sort data by subject and activity using order function
 * Write tidy data using write.table or write.csv function
- * This data set is called  
+ * This data set is called tidyData1.txt
 * The next step is to perform mean calculations for the columns by the subject:
  * Use split function to get a list by subject and loop over subject and perform colMeans to get averages for each subject at given activity
  * This produces TidyAverages.txt data set.

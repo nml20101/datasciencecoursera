@@ -10,9 +10,10 @@ collected from the accelerometers from the Samsung Galaxy S smartphone. It is ob
 
 ### Script Details and Output ###
 run_analsyis.R does the following tasks (per project's instructions):
-Downloads the data from aforementioned website
-2. Saves the data in UCI HAR Dataset folder after extracting via unzip
-3.	Reads all activity names, subjects, test and train data sets
+
+* Downloads the data from aforementioned website
+* Saves the data in UCI HAR Dataset folder after extracting via unzip
+* Reads all activity names, subjects, test and train data sets
 4.	Extracts only the measurements on the mean and standard deviation for each measurement. 
 5.	Merges the training and the test sets to create one data set: tidyData1.txt
 6.	Uses descriptive activity names to name the activities in the data set

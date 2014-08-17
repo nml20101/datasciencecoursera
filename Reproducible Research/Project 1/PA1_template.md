@@ -32,7 +32,7 @@ print(dateDownloaded)
 ```
 
 ```
-## [1] "Sat Aug 16 19:06:58 2014"
+## [1] "Sat Aug 16 19:10:13 2014"
 ```
 
 ```r
